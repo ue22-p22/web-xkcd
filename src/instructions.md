@@ -20,6 +20,10 @@ what can be the meaning of `num` and `img` fields ?
 
 # assignment
 
+* you will work your way by editing
+  * `index.html`
+  * `code.js`
+  * `style.css`
 * use the usual naming scheme, i.e.
   * variables and functions in `lowercase` or `lowerCamelCase`
   * class names, if any, in `UpperCamelCase`

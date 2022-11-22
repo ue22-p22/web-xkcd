@@ -6,6 +6,5 @@ Intro to Javascript networking and asynchronous programming
 
 1. Clone this repo
 2. Open index.html in a browser
-4. ???
-3. Follow the instructions in that file, and edit index/style/code files
-5. Have fun
+3. Follow the instructions in that file
+4. Have fun
