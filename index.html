@@ -7,9 +7,9 @@
     src/instructions.md -->
 
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <script src="code.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
 </head>
 
 <body>
@@ -17,23 +17,35 @@
 
   <p>the xkcd comics</p>
 
-  <br>
-  <hr>
-  <div class="centered">
-    <button id="previous">←</button>
-    <button id="reset">↺</button>
-    <button id="next">→</button>
-  </div>
+    <br>
+    <hr>
+    <div id="buttons" class="centered">
+        <button id="previous">←</button>
+        <button id="reset">↺</button>
+        <button id="next">→</button>
+    </div>
 
-  <div id="xkcd">
-    <img>
-  </div>
+    <div id="xkcd" class="centered">
+        <img>
+    </div>
 
-  <span id=num>status area</span>
+    <div class="centered">
+        <span id=num>status area</span>
+    </div>
+<hr>
 
-  <hr>
+a second occurrence of the app; you must not store the app state in a global;
+no styling at all, but to demonstrate
+that the logic works fine
+<span id="previous2">PREVIOUS</span>
+<span id="reset2">RESET</span>
+<span id="next2">NEXT</span>
+<img id="img2">
+<span id="info2">description goes here</span>
 
-  <!-- DO NOT EDIT THE TEXT BELOW
+<hr>
+
+<!-- DO NOT EDIT THE TEXT BELOW
     it is preprocessed from the markdown file
     src/instructions.md - edit that file instead ! -->
 
@@ -140,7 +152,7 @@ when relevant</li>
 <p>for example, you could write a class, that gets created from 5 css selectors, so
 that the gist of <code>code.js</code> becomes (for example)</p>
 
-<pre><code>new XkcdBrowser(
+<pre><code>const xkcdBrower = XkcdBrowser(
     // how to find the 5 elements, from css selectors
     "#xkcd&gt;img",
     "#num",
