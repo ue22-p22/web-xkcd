@@ -98,12 +98,17 @@ new XkcdBrowser(
 
 * this should let you add a second, independant, area in the page, that implements the same logic - possibly within a completely different layout
 
-## option B 
+## option B
 
 * keep track of the latest issue number, and disable the prev/next buttons when
   they will be ineffective
 * *hint:* this might lead you to change `fetchIssue` so that it returns the current `num` in addition to displaying it
 
 ## option C
+
 * display the issue title, date, and alternative text, in addition to its number
 * any other improvement that you find useful or interesting
+
+## option D
+
+* let the user go directly to a specific issue by typing the number in a searchbox
